@@ -1,0 +1,114 @@
+ html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+} 
+
+
+.pacman {
+    margin-top: 30px;
+    margin-left: 30px;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    animation-name: hereket;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    z-index: 2;
+}
+
+.ghost {
+    margin-top: 30px;
+    margin-left: 30px;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    animation-name: hereket2;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    z-index: 1;
+}
+
+img {
+    width: 100%;
+}
+
+@keyframes hereket {
+    0% {left: 0px; top: 0px; transform: rotate(-30deg);}
+    6.25% {left: 50px; top: 100px; transform: rotate(30deg);}
+    12.5% {left: 100px; top: 0px;transform: rotate(-30deg);}
+    18.75% {left: 150px; top: 100px;transform: rotate(30deg)}
+    25% {left: 200px; top: 0px;transform: rotate(-30deg)}
+    31.25% {left: 250px; top: 100px;transform: rotate(30deg)}
+    37.5% {left: 300px; top: 0px;transform: rotate(-30deg)}
+    43.75% {left: 350px; top: 100px;transform: rotate(30deg)}
+    50% {left: 400px; top: 0px;transform: rotate(-30deg)}
+    56.25% {left: 450px; top: 100px;transform: rotate(30deg)}
+    62.5% {left: 500px; top: 0px;transform: rotate(-30deg)}
+    68.75% {left: 550px; top: 100px;transform: rotate(30deg)}
+    75% {left: 600px; top: 0px;transform: rotate(-30deg)}
+    81.25% {left: 650px; top: 100px;transform: rotate(30deg)}
+    87.5% {left: 700px; top: 0px;transform: rotate(-30deg)}
+    93.75% {left: 750px; top: 100px;transform: rotate(30deg);}
+    100% {left: 800px; top: 0px;transform: rotate(-30deg);}
+}
+
+
+
+@keyframes hereket2 {
+    0% {left: 0px; top: 100px;transform: rotate(-30deg)}
+    6.25% {left: 50px; top: 0px;transform: rotate(30deg)}
+    12.5% {left: 100px; top: 100px;transform: rotate(-30deg)}
+    18.75% {left: 150px; top: 0px;transform: rotate(30deg)}
+    25% {left: 200px; top: 100px;transform: rotate(-30deg)}
+    31.25% {left: 250px; top: 0px;transform: rotate(30deg)}
+    37.5% {left: 300px; top: 100px;transform: rotate(-30deg)}
+    43.75% {left: 350px; top: 0px;transform: rotate(30deg)}
+    50% {left: 400px; top: 100px;transform: rotate(-30deg)}
+    56.25% {left: 450px; top: 0px;transform: rotate(30deg)}
+    62.5% {left: 500px; top: 100px;transform: rotate(-30deg)}
+    68.75% {left: 550px; top: 0px;transform: rotate(30deg)}
+    75% {left: 600px; top: 100px;transform: rotate(-30deg)}
+    81.25% {left: 650px; top: 0px;transform: rotate(30deg)}
+    87.5% {left: 700px; top: 100px;transform: rotate(-30deg)}
+    93.75% {left: 750px; top: 0px;transform: rotate(30deg)}
+    100% {left: 800px; top: 100px;transform: rotate(-30deg)}
+}
